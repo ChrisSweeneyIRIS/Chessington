@@ -1,4 +1,5 @@
-﻿using Chessington.GameEngine.Pieces;
+﻿using System.Linq;
+using Chessington.GameEngine.Pieces;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -31,8 +32,5 @@ namespace Chessington.GameEngine.Tests.Pieces
 
             moves.Should().Contain(Square.At(2, 0));
         }
-
-
-
     }
 }
