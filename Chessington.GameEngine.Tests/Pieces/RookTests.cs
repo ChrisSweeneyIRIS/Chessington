@@ -19,11 +19,13 @@ namespace Chessington.GameEngine.Tests.Pieces
             var expectedMoves = new List<Square>();
 
             for (var i = 0; i < 8; i++)
+            {
                 expectedMoves.Add(Square.At(4, i));
-
+            }
             for (var i = 0; i < 8; i++)
+            {
                 expectedMoves.Add(Square.At(i, 4));
-
+            }
             //Get rid of our starting location.
             expectedMoves.RemoveAll(s => s == Square.At(4, 4));
 
