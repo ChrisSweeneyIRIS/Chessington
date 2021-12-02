@@ -2,6 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
+
 namespace Chessington.GameEngine.Tests.Pieces
 {
     [TestFixture]
@@ -30,5 +31,8 @@ namespace Chessington.GameEngine.Tests.Pieces
 
             moves.Should().Contain(Square.At(2, 0));
         }
+
+
+
     }
 }
