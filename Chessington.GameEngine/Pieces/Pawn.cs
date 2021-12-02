@@ -20,7 +20,7 @@ namespace Chessington.GameEngine.Pieces
             // White moves up board, therefore subtract
             if (this.Player == Player.White)
             {
-                if (currentSquare.Row == whiteStart)
+                if (currentSquare.Row >= whiteStart)
                 {
                     moves.Add(new Square(currentSquare.Row - 1, currentSquare.Col));
                     // Ability to moves aditional spaces
@@ -35,7 +35,7 @@ namespace Chessington.GameEngine.Pieces
             // Black moves down board, so adds
             else
             {
-                if (currentSquare.Row == blackStart)
+                if (currentSquare.Row <= blackStart)
                 {
                     moves.Add(new Square(currentSquare.Row + 1, currentSquare.Col));
                     moves.Add(new Square(currentSquare.Row + 2, currentSquare.Col));
